@@ -1,5 +1,5 @@
 import Utils from './utils';
-const DappAddress = 'n1rDPobNrMeWomR8S8LXBDDeMD1MN3mHedF';
+const DappAddress = 'n1jvob6jtSHFkRet6Zq8Apc5GMV2n72goYH';
 
 var TodoModel = function (key) {
   this.key = key;

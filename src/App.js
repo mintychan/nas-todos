@@ -11,7 +11,9 @@ const ACTIVE_TODOS = 'active';
 const COMPLETED_TODOS = 'completed';
 const KEY = 'nas-todo';
 const ENTER_KEY = 13;
-const DappAddress = 'n1rDPobNrMeWomR8S8LXBDDeMD1MN3mHedF';
+const DappAddress = 'n1jvob6jtSHFkRet6Zq8Apc5GMV2n72goYH';
+
+// hash: 90abe4867ef2df7f470381bf07b3bb35e484d14aaf5f355dfce62316792a6986
 
 class App extends Component {
   constructor(props) {
@@ -127,7 +129,7 @@ class App extends Component {
   render() {
     var footer;
     var main;
-    var todos = this.state.todos.filter(todo => todo.deleted !== true);
+    var todos = this.state.todos.filter(todo => todo.deleted !== true && todo.deleted !== 'true');
 
     var shownTodos = todos.
       filter(todo => {
